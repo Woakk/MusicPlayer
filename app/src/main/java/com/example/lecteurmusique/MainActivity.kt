@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     //Play & Pause
-
     private fun togglePlayPause() {
         mediaPlayer?.let {
             if (it.isPlaying) {
@@ -63,7 +62,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     //Next Music
-
     private fun playNext(adapter: MusicPlayerAdapter, songTitleTextView: TextView) {
         if (currentPosition < adapter.count - 1) {
             currentPosition++
