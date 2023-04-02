@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 mediaPlayer?.start()
                 currentPosition = position
             } else {
-                togglePlayPause()
+                mediaPlayer?.stop()
             }
             updateSongTitle(songTitleTextView, adapter.getItem(position).title)
         }
